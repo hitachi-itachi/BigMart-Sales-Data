@@ -14,4 +14,5 @@ df = pd.read_csv('bigmartsales.csv')
 print(df.shape)
 
 #preparing the data for training
-#X =
+X = df['Item_Visibility', 'Item_MRP','Item_Outlet_Sales']
+Y = df['Item_Type', 'Outlet_Size', 'Outlet_Location_Type', 'Outlet_Type']
